@@ -1,11 +1,9 @@
 .places {
     margin-top: 30px;
     display: flex;
-    /* box-sizing: border-box; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    /* border: #FF5A5F 2px solid; */
 }
 
 .places h1, .places h2 {
@@ -149,4 +147,23 @@
 
 .places .reviews li p {
     font-size: 12px;
+}
+
+@media screen and (max-width: 667px) {
+    .container {
+        max-width: 350px;
+    }
+    
+    .places article {
+        /* width: 89%; */
+        min-width: 200px;
+        margin: 3px;
+    }
+
+    .places article>h2 {
+        width: 60%;
+        margin-left: 02px;
+        /* border: #FF5A5F 2px solid; */
+    }
+
 }
